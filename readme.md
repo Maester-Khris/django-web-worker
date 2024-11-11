@@ -6,7 +6,7 @@ To use our project, ensure that you have the following packages installed:
 - Selenium: A tool for automating web browsers.
 
 ## Installation
-You can install the required packages using pip:
+You can install the required packages using pip: <br>
 `pip install daphne beautifulsoup4 selenium`
 
 ## Future Improvements
