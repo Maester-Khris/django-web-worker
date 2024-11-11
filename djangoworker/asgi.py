@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/5.1/howto/deployment/asgi/
 
 import os
 import threading
-from scrapper.worker import launch_scrapper
+from scrapper.worker import launch_scrapper_v1, launch_scrapper_v2
 
 from django.core.asgi import get_asgi_application
 
@@ -17,4 +17,4 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'djangoworker.settings')
 
 application = get_asgi_application()
 
-threading.Thread(target=launch_scrapper).start()
+threading.Thread(target=launch_scrapper_v2).start()
